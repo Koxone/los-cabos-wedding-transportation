@@ -44,9 +44,6 @@ div.container.one {
       @media (min-width: 1200px) {
         margin-bottom: -50px;
       }
-      @media (min-width: 1920px) {
-        margin-bottom: -70px;
-      }
 
       > p:nth-of-type(1) {
         font-size: 17px;
@@ -57,10 +54,6 @@ div.container.one {
         margin: 0%;
         padding: 0;
         color: #297da9;
-
-        @media (min-width: 1920px) {
-          font-size: 21px;
-        }
       }
 
       > h1 {
@@ -71,10 +64,6 @@ div.container.one {
         font-family: "Poppins", sans-serif;
         color: black;
         margin: 5px 0 0 0;
-
-        @media (min-width: 1920px) {
-          font-size: 89px;
-        }
       }
       > p:nth-of-type(2) {
         text-align: center;
@@ -85,10 +74,6 @@ div.container.one {
         letter-spacing: 0px;
         margin: 13px 0 0 0;
         color: #425466;
-
-        @media (min-width: 1920px) {
-          font-size: 21px;
-        }
       }
     }
 
@@ -111,11 +96,6 @@ div.container.one {
       @media (min-width: 1200px) and (max-width: 1535px) {
         width: 900px;
         height: 445px;
-      }
-
-      @media (min-width: 1920px) and (max-width: 2559px) {
-        width: 1536px;
-        height: 760.0704px;
       }
       > picture {
         display: block;
@@ -167,17 +147,6 @@ div.container.two {
       margin-top: 34px;
       margin-bottom: 34px;
     }
-    @media (min-width: 1920px) {
-      display: grid;
-      grid-template-areas:
-        "text pic"
-        "cards pic";
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-      margin-top: 34px;
-      margin-bottom: 34px;
-    }
     > div.top {
       display: flex;
       flex-direction: column;
@@ -193,11 +162,6 @@ div.container.two {
         height: 188px;
         grid-area: text;
       }
-      @media (min-width: 1920px) {
-        width: 628px;
-        height: 251px;
-        grid-area: text;
-      }
 
       > p:first-of-type {
         font-size: 17px;
@@ -208,10 +172,6 @@ div.container.two {
         margin: 0%;
         font-family: "Poppins";
         color: #297da9;
-
-        @media (min-width: 1920px) {
-          font-size: 21px;
-        }
       }
       > h2 {
         font-size: 34px;
@@ -222,15 +182,6 @@ div.container.two {
         color: black;
         margin: 10px 0 0 0;
         text-align: center;
-
-        @media (min-width: 1920px) {
-          font-size: 55px;
-          text-align: left;
-          line-height: 120%;
-          &::after {
-            font-size: 55px;
-          }
-        }
       }
       > h2 + p {
         font-size: 13px;
@@ -238,12 +189,6 @@ div.container.two {
         font-family: Poppins;
         text-align: left;
         color: #0000008c;
-
-        @media (min-width: 1920px) {
-          font-size: 17px;
-          color: #0000008c;
-          line-height: 150%;
-        }
       }
     }
     > div.middle {
@@ -271,16 +216,6 @@ div.container.two {
         height: 364px;
         grid-area: cards;
       }
-      @media (min-width: 1920px) {
-        display: grid;
-        grid-template-areas:
-          "one two"
-          "three four";
-        grid-template-columns: 1fr 1fr;
-        width: 628px;
-        height: 429px;
-        grid-area: cards;
-      }
 
       @media (min-width: 1200px) {
         div.card:nth-of-type(1) {
@@ -297,24 +232,6 @@ div.container.two {
         }
         div.card:nth-of-type(4) {
           width: 209.2496px;
-          height: 204px;
-        }
-      }
-      @media (min-width: 1920px) {
-        div.card:nth-of-type(1) {
-          width: 303.5008px;
-          height: 204px;
-        }
-        div.card:nth-of-type(2) {
-          width: 303.5008px;
-          height: 204px;
-        }
-        div.card:nth-of-type(3) {
-          width: 303.5008px;
-          height: 204px;
-        }
-        div.card:nth-of-type(4) {
-          width: 303.5008px;
           height: 204px;
         }
       }
@@ -338,11 +255,6 @@ div.container.two {
               font-family: Poppins;
               line-height: 100%;
             }
-            @media (min-width: 1920px) {
-              font-size: 17px;
-              font-family: Poppins;
-              line-height: 130%;
-            }
           }
           > p:nth-of-type(2) {
             font-size: 13px;
@@ -354,12 +266,6 @@ div.container.two {
             @media (min-width: 1200px) {
               font-size: 13px;
               font-weight: 300;
-              font-family: Poppins;
-              line-height: 130%;
-            }
-
-            @media (min-width: 1920px) {
-              font-size: 17px;
               font-family: Poppins;
               line-height: 130%;
             }
@@ -380,11 +286,6 @@ div.container.two {
         height: 439.5008px;
         grid-area: pic;
       }
-      @media (min-width: 1920px) {
-        width: 758px;
-        height: 758px;
-        grid-area: pic;
-      }
       > img {
         width: 366px;
         height: 366px;
@@ -393,10 +294,6 @@ div.container.two {
           height: 100%;
         }
         @media (min-width: 900px) and (max-width: 1199px) {
-          width: 100%;
-          height: 100%;
-        }
-        @media (min-width: 1920px) {
           width: 100%;
           height: 100%;
         }
@@ -456,10 +353,6 @@ div.container.four {
       grid-template-rows: 1fr 1fr;
       align-items: center;
     }
-    @media (min-width: 1920px) {
-      display: grid;
-      justify-content: space-between;
-    }
 
     > div.top {
       @media (min-width: 600px) {
@@ -473,11 +366,6 @@ div.container.four {
         grid-area: pic;
         margin-right: 21px;
       }
-      @media (min-width: 1920px) {
-        width: 758px;
-        height: 674px;
-        margin-right: 150px;
-      }
       > picture {
         @media (min-width: 600px) {
           display: flex;
@@ -487,28 +375,16 @@ div.container.four {
           width: 439.5008px;
           height: 391.08px;
         }
-        @media (min-width: 1920px) {
-          width: 758px;
-          height: 674px;
-        }
         > img {
           @media (min-width: 1200px) {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
-          @media (min-width: 1920px) {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
         }
       }
     }
     > div.middle {
-      @media (min-width: 1920px) {
-        width: 628px;
-      }
       > p:nth-of-type(1) {
         font-size: 17px;
         color: #297da9;
@@ -554,14 +430,6 @@ div.container.four {
         flex-direction: row;
         flex-wrap: wrap;
       }
-      @media (min-width: 1920px) {
-        display: flex;
-        flex-direction: row;
-        gap: 21px;
-        flex-wrap: wrap;
-        width: 628px;
-        height: 335px;
-      }
 
       > div.card {
         display: flex;
@@ -574,10 +442,6 @@ div.container.four {
           drop-shadow(0 0 14.1792px rgba(0, 51, 85, 0.0389)) drop-shadow(0 0 29.2px rgba(0, 51, 85, 0.0483));
         padding: 13px;
 
-        @media (min-width: 1920px) {
-          justify-content: center;
-        }
-
         > div.top {
         }
 
@@ -589,10 +453,6 @@ div.container.four {
             @media (min-width: 1200px) {
               margin: 0 0 5px 0;
             }
-
-            @media (min-width: 1920px) {
-              font-size: 21px;
-            }
           }
           > p:nth-of-type(2) {
             color: #0000008c;
@@ -601,10 +461,6 @@ div.container.four {
             @media (min-width: 1200px) {
               margin: auto;
               line-height: 130%;
-            }
-
-            @media (min-width: 1920px) {
-              font-size: 17px;
             }
           }
         }
@@ -618,10 +474,6 @@ div.container.four {
           width: 209.2496px;
           height: 149px;
         }
-        @media (min-width: 1920px) {
-          width: 303.5008px;
-          height: 168px;
-        }
       }
       > div.card:nth-of-type(2) {
         @media (min-width: 900px) {
@@ -632,10 +484,6 @@ div.container.four {
           width: 209.2496px;
           height: 149px;
         }
-        @media (min-width: 1920px) {
-          width: 303.5008px;
-          height: 168px;
-        }
       }
       > div.card:nth-of-type(3) {
         @media (min-width: 900px) {
@@ -645,10 +493,6 @@ div.container.four {
         @media (min-width: 1200px) {
           width: 439.5008px;
           height: 132px;
-        }
-        @media (min-width: 1920px) {
-          width: 628px;
-          height: 146px;
         }
       }
     }
@@ -687,12 +531,6 @@ div.container.five {
       padding: 0;
       margin-bottom: 34px;
     }
-    @media (min-width: 1920px) and (max-width: 2500px) {
-      display: flex;
-      flex-direction: row;
-      padding: 0;
-      margin-bottom: 34px;
-    }
     > div.top {
       @media (min-width: 375px) {
         display: flex;
@@ -704,13 +542,6 @@ div.container.five {
         height: 356px;
         margin-left: auto;
       }
-      @media (min-width: 1920px) {
-        width: 628px;
-        height: 456px;
-        margin-right: auto;
-        position: relative;
-        left: 190px;
-      }
       > div.top {
         > p {
           font-size: 17px;
@@ -719,19 +550,11 @@ div.container.five {
           margin: 0;
           line-height: 100%;
           font-family: Poppins;
-
-          @media (min-width: 1920px) {
-            font-size: 21px;
-          }
         }
         > h2 {
           font-size: 34px;
           color: black;
           margin: 0px;
-
-          @media (min-width: 1920px) {
-            font-size: 55px;
-          }
         }
       }
       > div.middle {
@@ -742,10 +565,6 @@ div.container.five {
           line-height: 100%;
           font-family: Poppins;
           margin: 0;
-
-          @media (min-width: 1920px) {
-            font-size: 17px;
-          }
         }
         > p:nth-of-type(2) {
           font-size: 13px;
@@ -753,10 +572,6 @@ div.container.five {
           font-weight: 400;
           line-height: 100%;
           font-family: Poppins;
-
-          @media (min-width: 1920px) {
-            font-size: 17px;
-          }
         }
       }
       > div.bottom {
@@ -776,10 +591,6 @@ div.container.five {
           border-radius: 500px;
           font-family: Poppins;
           background-color: #29aae3;
-          @media (min-width: 1920px) {
-            width: 165px;
-            height: 66px;
-          }
 
           &:after {
             content: "";
@@ -789,10 +600,6 @@ div.container.five {
             background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
             background-size: cover;
             background-repeat: no-repeat;
-          }
-
-          @media (min-width: 1920px) {
-            font-size: 17px;
           }
         }
       }
@@ -816,12 +623,6 @@ div.container.five {
         gap: 21px;
       }
       @media (min-width: 1200px) and (max-width: 1535px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 21px;
-      }
-      @media (min-width: 1920px) and (max-width: 2500px) {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -1009,326 +810,208 @@ div.container.seven {
         width: 288px;
         height: 286px;
       }
+      t: 386px;
+    }
 
-      @media (min-width: 1536px) {
-        width: 386px;
-        height: 386px;
+    > div.box {
+      > div.top {
+        > h2 {
+          font-size: 34px;
+          font-weight: 400;
+          color: white;
+          line-height: 120%;
+          margin: 0 0 33px 0;
+        }
       }
+      > div.middle {
+        margin-bottom: 33px;
+        width: 100%;
+        max-width: 100%;
 
-      @media (min-width: 1920px) {
-        width: 498px;
-        height: 500px;
-        padding: 55px;
-      }
+        > a {
+          display: inline-flex;
+          align-items: center;
+          text-align: center;
+          white-space: nowrap;
+          justify-content: center;
+          position: relative;
+          width: 100%;
+          height: 50px;
+          max-width: 100%;
+          font-size: 13px;
+          font-weight: 400;
+          font-family: "Inter";
+          line-height: 1;
+          letter-spacing: 0;
+          color: #ffffff;
+          background: none;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          gap: 10px;
+          cursor: pointer;
 
-      > div.box {
-        > div.top {
-          > h2 {
-            font-size: 34px;
-            font-weight: 400;
-            color: white;
-            line-height: 120%;
-            margin: 0 0 33px 0;
+          &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
 
-            @media (min-width: 1920px) {
-              font-size: 55px;
-            }
+          &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
           }
         }
-        > div.middle {
-          margin-bottom: 33px;
-          width: 100%;
-          max-width: 100%;
-
-          @media (min-width: 1920px) {
-            margin: 77.5008px 0 77.5008px 0;
+      }
+      > div.bottom {
+        > div.top {
+          > strong {
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
           }
-
-          > a {
-            display: inline-flex;
-            align-items: center;
-            text-align: center;
-            white-space: nowrap;
-            justify-content: center;
-            position: relative;
-            width: 100%;
-            height: 50px;
-            max-width: 100%;
+          > p {
             font-size: 13px;
             font-weight: 400;
-            font-family: "Inter";
-            line-height: 1;
-            letter-spacing: 0;
-            color: #ffffff;
-            background: none;
-            border: 1px solid #ffffff;
-            border-radius: 5px;
-            gap: 10px;
-            cursor: pointer;
+            color: white;
 
-            @media (min-width: 1920px) {
-              font-size: 17px;
-              height: 66px;
+            @media (min-width: 600px) {
+              margin: 0 0 21px 0;
             }
 
-            &::after {
-              content: "";
-              width: 16px;
-              height: 16px;
-              background-size: cover;
-              background-repeat: no-repeat;
-            }
-
-            &::after {
-              background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+            @media (min-width: 900px) {
+              margin: 0;
             }
           }
         }
         > div.bottom {
-          > div.top {
-            > strong {
-              font-size: 17px;
-              font-weight: 700;
-              color: white;
-
-              @media (min-width: 1920px) {
-                font-size: 21px;
-              }
-            }
-            > p {
-              font-size: 13px;
-              font-weight: 400;
-              color: white;
-
-              @media (min-width: 600px) {
-                margin: 0 0 21px 0;
-              }
-
-              @media (min-width: 900px) {
-                margin: 0;
-              }
-
-              @media (min-width: 1920px) {
-                font-size: 17px;
-              }
-            }
+          @media (min-width: 900px) {
+            margin-top: 21px;
           }
-          > div.bottom {
+
+          > strong {
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+          }
+          > p {
+            font-size: 13px;
+            font-weight: 400;
+            color: white;
+
+            @media (min-width: 600px) {
+              margin: 0;
+            }
+
             @media (min-width: 900px) {
-              margin-top: 21px;
-            }
-
-            > strong {
-              font-size: 17px;
-              font-weight: 700;
-              color: white;
-
-              @media (min-width: 1920px) {
-                font-size: 21px;
-              }
-            }
-            > p {
-              font-size: 13px;
-              font-weight: 400;
-              color: white;
-
-              @media (min-width: 600px) {
-                margin: 0;
-              }
-
-              @media (min-width: 900px) {
-                margin: 0;
-              }
-
-              @media (min-width: 1920px) {
-                font-size: 17px;
-              }
+              margin: 0;
             }
           }
         }
       }
     }
-    > div.bottom {
-      padding: 21px;
-      border-radius: 13px;
-      border: 1px solid #ccd6eb;
-      background-color: #ffffff;
-      max-width: 100%;
+  }
+  > div.bottom {
+    padding: 21px;
+    border-radius: 13px;
+    border: 1px solid #ccd6eb;
+    background-color: #ffffff;
+    max-width: 100%;
 
-      @media (min-width: 900px) {
-        width: 288px;
-        height: 286px;
+    @media (min-width: 900px) {
+      width: 288px;
+      height: 286px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 593px;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("/assets/images/1200/nine-chat.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto 308px;
       }
+    }
 
-      @media (min-width: 1200px) {
-        width: 593px;
-        position: relative;
-        overflow: hidden;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0px;
-          right: 0px;
-          width: 100%;
-          height: 100%;
-          background-image: url("/assets/images/1200/nine-chat.png");
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: auto 308px;
+    > div.box {
+      > div.top {
+        > p:nth-of-type(1) {
+          font-size: 17px;
+          font-weight: 400;
+          color: #297da9;
+          line-height: 100%;
+          margin: 0 0 5px 0;
+        }
+        > p:nth-of-type(2) {
+          font-size: 21px;
+          font-weight: 400;
+          color: black;
+          line-height: 100%;
+          margin: 0 0 16.2496px 0;
+        }
+        > p:nth-of-type(3) {
+          font-size: 13px;
+          font-weight: 400;
+          color: #090c058c;
+          line-height: 100%;
+          margin: 0 0 16.2496px 0;
         }
       }
-
-      @media (min-width: 1536px) {
-        width: 793px;
-        height: 386px;
-        padding: 34px;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0px;
-          right: 0px;
-          width: 100%;
-          height: 100%;
-          background-image: url("/assets/images/1200/nine-chat.png");
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: auto 385px;
-        }
-      }
-
-      @media (min-width: 1920px) {
-        width: 1014px;
-        height: 500px;
-        padding: 55px;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0px;
-          right: 0px;
-          width: 100%;
-          height: 100%;
-          background-image: url("/assets/images/1200/nine-chat.png");
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: auto 502px;
-        }
-      }
-
-      > div.box {
-        @media (min-width: 1536px) {
+      > div.middle {
+        > button {
           display: flex;
-          flex-direction: column;
-          gap: 34.7504px;
-        }
+          align-items: center;
+          gap: 10px;
+          padding: 13px;
+          background-color: #06c270;
+          color: white;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
 
-        > div.top {
-          > p:nth-of-type(1) {
-            font-size: 17px;
-            font-weight: 400;
-            color: #297da9;
-            line-height: 100%;
-            margin: 0 0 5px 0;
-
-            @media (min-width: 1920px) {
-              font-size: 21px;
-            }
-          }
-          > p:nth-of-type(2) {
-            font-size: 21px;
-            font-weight: 400;
-            color: black;
-            line-height: 100%;
-            margin: 0 0 16.2496px 0;
-
-            @media (min-width: 1920px) {
-              font-size: 34px;
-              margin-bottom: 44.2496px;
-            }
-          }
-          > p:nth-of-type(3) {
-            font-size: 13px;
-            font-weight: 400;
-            color: #090c058c;
-            line-height: 100%;
-            margin: 0 0 16.2496px 0;
-
-            @media (min-width: 1920px) {
-              font-size: 17px;
-            }
+          @media (min-width: 900px) {
+            margin-bottom: 12px;
           }
         }
-        > div.middle {
-          > button {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 13px;
-            background-color: #06c270;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
+      }
+      > div.bottom {
+        > p:nth-of-type(1) {
+          font-size: 17px;
+          color: black;
+          font-weight: 400;
 
-            @media (min-width: 900px) {
-              margin-bottom: 12px;
-            }
-
-            @media (min-width: 1920px) {
-              padding: 22.5008px;
-              font-size: 17px;
-            }
+          @media (min-width: 900px) {
+            margin: 0;
           }
         }
-        > div.bottom {
-          > p:nth-of-type(1) {
-            font-size: 17px;
-            color: black;
-            font-weight: 400;
+        > p:nth-of-type(2) {
+          font-size: 13px;
+          color: #090c058c;
+          font-weight: 400;
+          line-height: 130%;
+          margin: 5px 0 16.2496px 0;
 
-            @media (min-width: 900px) {
-              margin: 0;
-            }
-
-            @media (min-width: 1920px) {
-              font-size: 21px;
-            }
+          @media (min-width: 900px) {
+            margin: 5px 0 5px 0;
           }
-          > p:nth-of-type(2) {
-            font-size: 13px;
-            color: #090c058c;
-            font-weight: 400;
-            line-height: 130%;
-            margin: 5px 0 16.2496px 0;
 
-            @media (min-width: 900px) {
-              margin: 5px 0 5px 0;
-            }
-
-            @media (min-width: 900px) {
-              width: 246px;
-            }
-
-            @media (min-width: 1536px) {
-              margin-bottom: 34.7504px;
-            }
-
-            @media (min-width: 1920px) {
-              font-size: 17px;
-              margin-bottom: 10px;
-            }
+          @media (min-width: 900px) {
+            width: 246px;
           }
-          > a {
-            text-decoration: none;
-            color: #297da9;
-            font-size: 13px;
-
-            @media (min-width: 1920px) {
-              font-size: 17px;
-            }
-          }
+        }
+        > a {
+          text-decoration: none;
+          color: #297da9;
+          font-size: 13px;
         }
       }
     }
