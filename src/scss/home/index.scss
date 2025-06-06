@@ -1,142 +1,121 @@
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 div.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  // border: 1px solid red;
   > div.wrapper {
+    border: 1px solid blue;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    padding: 2.125rem 1.5rem;
-    gap: 2.125rem;
-
-    @media (min-width: 37.5rem) {
-      padding: 2.125rem 5.8125rem;
-    }
-
-    @media (min-width: 56.25rem) {
-      padding: 2.125rem 9.375rem;
-    }
-
-    @media (min-width: 96rem) {
-      padding: 2.125rem 10.5rem;
-    }
   }
 }
 
 div.container.one {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
+    @media (max-width: 1199px) {
+      gap: 34px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 2565px) {
+      gap: 21px;
+      width: 100%;
+    }
     > div.top {
       display: inline-flex;
       flex-direction: column;
       width: 100%;
       text-align: center;
-      padding: 0.125rem;
+      padding: 2px;
 
-      @media (min-width: 56.25rem) {
-        margin-bottom: -2.5rem;
+      @media (min-width: 900px) {
+        margin-bottom: -40px;
       }
-      @media (min-width: 75rem) {
-        margin-bottom: -3.125rem;
+      @media (min-width: 1200px) {
+        margin-bottom: -50px;
       }
-      @media (min-width: 120rem) {
-        margin-bottom: -4.375rem;
+      @media (min-width: 1920px) {
+        margin-bottom: -70px;
       }
 
       > p:nth-of-type(1) {
-        font-size: 1.0625rem;
+        font-size: 17px;
         font-weight: 400;
         font-family: "Poppins", sans-serif;
         line-height: 100%;
-        letter-spacing: 0rem;
+        letter-spacing: 0px;
         margin: 0%;
         padding: 0;
         color: #297da9;
 
-        @media (min-width: 120rem) {
-          font-size: 1.3125rem;
+        @media (min-width: 1920px) {
+          font-size: 21px;
         }
       }
 
       > h1 {
-        font-size: 3.4375rem;
+        font-size: 55px;
         font-weight: 600;
         line-height: 100%;
-        letter-spacing: 0rem;
+        letter-spacing: 0px;
         font-family: "Poppins", sans-serif;
         color: black;
-        margin: 0.3125rem 0 0 0;
+        margin: 5px 0 0 0;
 
-        @media (min-width: 120rem) {
-          font-size: 5.5625rem;
+        @media (min-width: 1920px) {
+          font-size: 89px;
         }
       }
       > p:nth-of-type(2) {
         text-align: center;
-        font-size: 1.3125rem;
+        font-size: 21px;
         font-family: Arial, sans-serif;
         font-weight: 400;
         line-height: 130%;
-        letter-spacing: 0rem;
-        margin: 0.8125rem 0 0 0;
+        letter-spacing: 0px;
+        margin: 13px 0 0 0;
         color: #425466;
 
-        @media (min-width: 120rem) {
-          font-size: 1.3125rem;
+        @media (min-width: 1920px) {
+          font-size: 21px;
         }
       }
     }
 
     > div.bottom {
-      @media (min-width: 25.875rem) and (max-width: 37.4375rem) {
-        width: 22.875rem;
-        height: 13.25rem;
+      @media (min-width: 414px) and (max-width: 599px) {
+        width: 366px;
+        height: 212px;
       }
 
-      @media (min-width: 37.5rem) and (max-width: 56.1875rem) {
-        width: 25.875rem;
-        height: 11.25rem;
+      @media (min-width: 600px) and (max-width: 899px) {
+        width: 414px;
+        height: 180px;
       }
 
-      @media (min-width: 56.25rem) and (max-width: 74.9375rem) {
-        width: 37.5rem;
-        height: 18.4375rem;
+      @media (min-width: 900px) and (max-width: 1199px) {
+        width: 600px;
+        height: 295px;
       }
 
-      @media (min-width: 75rem) and (max-width: 95.9375rem) {
-        width: 56.25rem;
-        height: 27.8125rem;
+      @media (min-width: 1200px) and (max-width: 1535px) {
+        width: 900px;
+        height: 445px;
       }
 
-      @media (min-width: 120rem) and (max-width: 159.9375rem) {
-        width: 96rem;
-        height: 47.5044rem;
+      @media (min-width: 1920px) and (max-width: 2559px) {
+        width: 1536px;
+        height: 760.0704px;
       }
       > picture {
         display: block;
@@ -147,7 +126,7 @@ div.container.one {
           height: 100%;
           object-fit: cover;
           object-position: center;
-          border-radius: 0.5rem;
+          border-radius: 8px;
         }
       }
     }
@@ -155,19 +134,29 @@ div.container.one {
 }
 
 div.container.two {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
-    @media (min-width: 75rem) {
-      display: grid;
-      grid-template-areas:
-        "text pic"
-        "cards pic";
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2.125rem;
-      margin-bottom: 2.125rem;
+    @media (max-width: 1199px) {
+      gap: 34px;
     }
-    @media (min-width: 120rem) {
+
+    @media (min-width: 1200px) and (max-width: 2565px) {
+      gap: 21px;
+      width: 100%;
+    }
+    @media (min-width: 1200px) {
       display: grid;
       grid-template-areas:
         "text pic"
@@ -175,148 +164,160 @@ div.container.two {
       grid-template-columns: 1fr 1fr;
       align-items: center;
       justify-content: center;
-      margin-top: 2.125rem;
-      margin-bottom: 2.125rem;
+      margin-top: 34px;
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1920px) {
+      display: grid;
+      grid-template-areas:
+        "text pic"
+        "cards pic";
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      margin-top: 34px;
+      margin-bottom: 34px;
     }
     > div.top {
       display: flex;
       flex-direction: column;
       width: 100%;
 
-      @media (min-width: 56.25rem) {
-        width: 37.5rem;
-        height: 7.9375rem;
+      @media (min-width: 900px) {
+        width: 600px;
+        height: 127px;
         grid-area: text;
       }
-      @media (min-width: 75rem) {
-        width: 27.4688rem;
-        height: 11.75rem;
+      @media (min-width: 1200px) {
+        width: 439.5008px;
+        height: 188px;
         grid-area: text;
       }
-      @media (min-width: 120rem) {
-        width: 39.25rem;
-        height: 15.6875rem;
+      @media (min-width: 1920px) {
+        width: 628px;
+        height: 251px;
         grid-area: text;
       }
 
       > p:first-of-type {
-        font-size: 1.0625rem;
+        font-size: 17px;
         font-weight: 400;
         text-align: center;
         line-height: 100%;
-        letter-spacing: 0rem;
+        letter-spacing: 0px;
         margin: 0%;
         font-family: "Poppins";
         color: #297da9;
 
-        @media (min-width: 120rem) {
-          font-size: 1.3125rem;
+        @media (min-width: 1920px) {
+          font-size: 21px;
         }
       }
       > h2 {
-        font-size: 2.125rem;
+        font-size: 34px;
         font-weight: 600;
         font-family: "Poppins";
         line-height: 100%;
-        letter-spacing: 0rem;
+        letter-spacing: 0px;
         color: black;
-        margin: 0.625rem 0 0 0;
+        margin: 10px 0 0 0;
         text-align: center;
 
-        @media (min-width: 120rem) {
-          font-size: 3.4375rem;
+        @media (min-width: 1920px) {
+          font-size: 55px;
           text-align: left;
           line-height: 120%;
           &::after {
-            font-size: 3.4375rem;
+            font-size: 55px;
           }
         }
       }
       > h2 + p {
-        font-size: 0.8125rem;
+        font-size: 13px;
         font-weight: 400;
         font-family: Poppins;
         text-align: left;
         color: #0000008c;
 
-        @media (min-width: 120rem) {
-          font-size: 1.0625rem;
+        @media (min-width: 1920px) {
+          font-size: 17px;
           color: #0000008c;
           line-height: 150%;
         }
       }
     }
     > div.middle {
-      @media (min-width: 56.25rem) {
-        display: grid;
-        grid-template-areas:
-          "one two"
-          "three four";
-        grid-template-columns: 1fr 1fr;
-        width: 37.5rem;
-        height: 19.75rem;
-        grid-area: cards;
-      }
-      @media (min-width: 75rem) {
-        display: grid;
-        grid-template-areas:
-          "one two"
-          "three four";
-        grid-template-columns: 1fr 1fr;
-        width: 27.4375rem;
-        height: 22.75rem;
-        grid-area: cards;
-      }
-      @media (min-width: 120rem) {
-        display: grid;
-        grid-template-areas:
-          "one two"
-          "three four";
-        grid-template-columns: 1fr 1fr;
-        width: 39.25rem;
-        height: 26.8125rem;
-        grid-area: cards;
-      }
       display: flex;
       flex-direction: column;
-      gap: 1.3125rem;
+      gap: 21px;
 
-        @media (min-width: 75rem) {
-          div.card:nth-of-type(1) {
-          width: 13.0781rem;
-          height: 8.6875rem;
-          }
-          div.card:nth-of-type(2) {
-          width: 13.0781rem;
-          height: 8.6875rem;
-          }
-          div.card:nth-of-type(3) {
-          width: 13.0781rem;
-          height: 12.75rem;
-          }
-          div.card:nth-of-type(4) {
-          width: 13.0781rem;
-          height: 12.75rem;
-          }
+      @media (min-width: 900px) {
+        display: grid;
+        grid-template-areas:
+          "one two"
+          "three four";
+        grid-template-columns: 1fr 1fr;
+        width: 600px;
+        height: 316px;
+        grid-area: cards;
+      }
+      @media (min-width: 1200px) {
+        display: grid;
+        grid-template-areas:
+          "one two"
+          "three four";
+        grid-template-columns: 1fr 1fr;
+        width: 439px;
+        height: 364px;
+        grid-area: cards;
+      }
+      @media (min-width: 1920px) {
+        display: grid;
+        grid-template-areas:
+          "one two"
+          "three four";
+        grid-template-columns: 1fr 1fr;
+        width: 628px;
+        height: 429px;
+        grid-area: cards;
+      }
+
+      @media (min-width: 1200px) {
+        div.card:nth-of-type(1) {
+          width: 209.2496px;
+          height: 139px;
         }
-        @media (min-width: 120rem) {
-          div.card:nth-of-type(1) {
-          width: 18.9688rem;
-          height: 12.75rem;
-          }
-          div.card:nth-of-type(2) {
-          width: 18.9688rem;
-          height: 12.75rem;
-          }
-          div.card:nth-of-type(3) {
-          width: 18.9688rem;
-          height: 12.75rem;
-          }
-          div.card:nth-of-type(4) {
-          width: 18.9688rem;
-          height: 12.75rem;
-          }
+        div.card:nth-of-type(2) {
+          width: 209.2496px;
+          height: 139px;
         }
+        div.card:nth-of-type(3) {
+          width: 209.2496px;
+          height: 204px;
+        }
+        div.card:nth-of-type(4) {
+          width: 209.2496px;
+          height: 204px;
+        }
+      }
+      @media (min-width: 1920px) {
+        div.card:nth-of-type(1) {
+          width: 303.5008px;
+          height: 204px;
+        }
+        div.card:nth-of-type(2) {
+          width: 303.5008px;
+          height: 204px;
+        }
+        div.card:nth-of-type(3) {
+          width: 303.5008px;
+          height: 204px;
+        }
+        div.card:nth-of-type(4) {
+          width: 303.5008px;
+          height: 204px;
+        }
+      }
 
       > div.card {
         > div.top {
@@ -327,38 +328,38 @@ div.container.two {
         }
         > div.middle {
           > p:nth-of-type(1) {
-            font-size: 0.8125rem;
+            font-size: 13px;
             font-weight: 500;
             font-family: Poppins;
             line-height: 100%;
 
-            @media (min-width: 75rem) {
-              font-size: 0.8125rem;
+            @media (min-width: 1200px) {
+              font-size: 13px;
               font-family: Poppins;
               line-height: 100%;
             }
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
               font-family: Poppins;
               line-height: 130%;
             }
           }
           > p:nth-of-type(2) {
-            font-size: 0.8125rem;
+            font-size: 13px;
             font-weight: 500;
             font-family: Poppins;
             line-height: 130%;
             color: #0000008c;
 
-            @media (min-width: 75rem) {
-              font-size: 0.8125rem;
+            @media (min-width: 1200px) {
+              font-size: 13px;
               font-weight: 300;
               font-family: Poppins;
               line-height: 130%;
             }
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
               font-family: Poppins;
               line-height: 130%;
             }
@@ -369,58 +370,84 @@ div.container.two {
       }
     }
     > div.bottom {
-      @media (min-width: 56.25rem) {
-        width: 37.5rem;
-        height: 37.5rem;
+      @media (min-width: 900px) {
+        width: 600px;
+        height: 600px;
         grid-area: pic;
       }
-      @media (min-width: 75rem) {
-        width: 27.4688rem;
-        height: 27.4688rem;
+      @media (min-width: 1200px) {
+        width: 439.5008px;
+        height: 439.5008px;
         grid-area: pic;
       }
-      @media (min-width: 120rem) {
-        width: 47.375rem;
-        height: 47.375rem;
+      @media (min-width: 1920px) {
+        width: 758px;
+        height: 758px;
         grid-area: pic;
       }
       > img {
-      @media (min-width: 75rem) {
-        width: 100%;
-        height: 100%;
-      }
-        @media (min-width: 56.25rem) and (max-width: 74.9375rem) {
+        width: 366px;
+        height: 366px;
+        @media (min-width: 1200px) {
           width: 100%;
           height: 100%;
         }
-        @media (min-width: 120rem) {
+        @media (min-width: 900px) and (max-width: 1199px) {
           width: 100%;
           height: 100%;
         }
-        width: 22.875rem;
-        height: 22.875rem;
+        @media (min-width: 1920px) {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
 }
 
 div.container.three {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
   > div.wrapper {
-    @media (min-width: 23.4375rem) {
-      padding-bottom: 0;
-      padding-top: 0;
-    }
+    width: 100%;
+
     > picture {
+      width: 100%;
+      > img {
+        width: 100%;
+      }
     }
   }
 }
 
 div.container.four {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
-    @media (min-width: 75rem) {
-      margin-bottom: 2.125rem;
+    @media (max-width: 1199px) {
+      gap: 34px;
     }
-    @media (min-width: 75rem) {
+
+    @media (min-width: 1200px) and (max-width: 2565px) {
+      gap: 21px;
+      width: 100%;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1200px) {
       display: grid;
       grid-template-areas:
         "pic text"
@@ -429,48 +456,48 @@ div.container.four {
       grid-template-rows: 1fr 1fr;
       align-items: center;
     }
-    @media (min-width: 120rem) {
+    @media (min-width: 1920px) {
       display: grid;
       justify-content: space-between;
     }
 
     > div.top {
-      @media (min-width: 37.5rem) {
+      @media (min-width: 600px) {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 25.875rem;
-        height: 23.0313rem;
+        width: 414px;
+        height: 368.5008px;
       }
-      @media (min-width: 75rem) {
+      @media (min-width: 1200px) {
         grid-area: pic;
-        margin-right: 1.3125rem;
+        margin-right: 21px;
       }
-      @media (min-width: 120rem) {
-        width: 47.375rem;
-        height: 42.125rem;
-        margin-right: 9.375rem;
+      @media (min-width: 1920px) {
+        width: 758px;
+        height: 674px;
+        margin-right: 150px;
       }
       > picture {
-        @media (min-width: 37.5rem) {
+        @media (min-width: 600px) {
           display: flex;
           align-self: baseline;
         }
-        @media (min-width: 75rem) {
-          width: 27.4688rem;
-          height: 24.4425rem;
+        @media (min-width: 1200px) {
+          width: 439.5008px;
+          height: 391.08px;
         }
-        @media (min-width: 120rem) {
-          width: 47.375rem;
-          height: 42.125rem;
+        @media (min-width: 1920px) {
+          width: 758px;
+          height: 674px;
         }
         > img {
-          @media (min-width: 75rem) {
+          @media (min-width: 1200px) {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
-          @media (min-width: 120rem) {
+          @media (min-width: 1920px) {
             width: 100%;
             height: 100%;
             object-fit: contain;
@@ -479,61 +506,61 @@ div.container.four {
       }
     }
     > div.middle {
-      @media (min-width: 120rem) {
-        width: 39.25rem;
+      @media (min-width: 1920px) {
+        width: 628px;
       }
       > p:nth-of-type(1) {
-        font-size: 1.0625rem;
+        font-size: 17px;
         color: #297da9;
         font-weight: 400;
-        margin: 1.3125rem 0 0 0;
+        margin: 21px 0 0 0;
 
-        @media (min-width: 56.25rem) {
-          font-size: 1.3125rem;
+        @media (min-width: 900px) {
+          font-size: 21px;
         }
       }
       > h2 {
         font-weight: 600;
-        font-size: 2.125rem;
+        font-size: 34px;
         color: black;
         margin: 0;
-        margin-bottom: 1.3125rem;
+        margin-bottom: 21px;
 
-        @media (min-width: 56.25rem) {
-          font-size: 3.4375rem;
+        @media (min-width: 900px) {
+          font-size: 55px;
         }
       }
       > p:nth-of-type(2) {
         font-weight: 400;
-        font-size: 1.0625rem;
+        font-size: 17px;
         color: #0000008c;
         margin: 0;
-        margin-bottom: 1.3125rem;
-        @media (min-width: 75rem) {
+        margin-bottom: 21px;
+        @media (min-width: 1200px) {
           margin: 0;
         }
 
-        @media (min-width: 56.25rem) {
-          font-size: 1.3125rem;
+        @media (min-width: 900px) {
+          font-size: 21px;
         }
       }
     }
     > div.bottom {
       display: flex;
       flex-direction: column;
-      gap: 1.3125rem;
+      gap: 21px;
 
-      @media (min-width: 56.25rem) {
+      @media (min-width: 900px) {
         flex-direction: row;
         flex-wrap: wrap;
       }
-      @media (min-width: 120rem) {
+      @media (min-width: 1920px) {
         display: flex;
         flex-direction: row;
-        gap: 1.3125rem;
+        gap: 21px;
         flex-wrap: wrap;
-        width: 39.25rem;
-        height: 20.9375rem;
+        width: 628px;
+        height: 335px;
       }
 
       > div.card {
@@ -541,13 +568,13 @@ div.container.four {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        border-radius: 0.3125rem;
+        border-radius: 5px;
         background-color: white;
-        filter: drop-shadow(0 0 0.1719rem rgba(0, 51, 85, 0.0217)) drop-shadow(0 0 0.4344rem rgba(0, 51, 85, 0.0311))
-          drop-shadow(0 0 0.8862rem rgba(0, 51, 85, 0.0389)) drop-shadow(0 0 1.825rem rgba(0, 51, 85, 0.0483));
-        padding: 0.8125rem;
+        filter: drop-shadow(0 0 2.7504px rgba(0, 51, 85, 0.0217)) drop-shadow(0 0 6.9504px rgba(0, 51, 85, 0.0311))
+          drop-shadow(0 0 14.1792px rgba(0, 51, 85, 0.0389)) drop-shadow(0 0 29.2px rgba(0, 51, 85, 0.0483));
+        padding: 13px;
 
-        @media (min-width: 120rem) {
+        @media (min-width: 1920px) {
           justify-content: center;
         }
 
@@ -557,157 +584,178 @@ div.container.four {
         > div.bottom {
           > p:first-of-type {
             color: black;
-            font-size: 1.0625rem;
+            font-size: 17px;
 
-            @media (min-width: 75rem) {
-              margin: 0 0 0.3125rem 0;
+            @media (min-width: 1200px) {
+              margin: 0 0 5px 0;
             }
 
-            @media (min-width: 120rem) {
-              font-size: 1.3125rem;
+            @media (min-width: 1920px) {
+              font-size: 21px;
             }
           }
           > p:nth-of-type(2) {
             color: #0000008c;
-            font-size: 0.8125rem;
+            font-size: 13px;
 
-            @media (min-width: 75rem) {
+            @media (min-width: 1200px) {
               margin: auto;
               line-height: 130%;
             }
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
             }
           }
         }
       }
       > div.card:nth-of-type(1) {
-        @media (min-width: 56.25rem) {
-          width: 18.0938rem;
-          height: 8.25rem;
+        @media (min-width: 900px) {
+          width: 289.5008px;
+          height: 132px;
         }
-        @media (min-width: 75rem) {
-          width: 13.0781rem;
-          height: 9.3125rem;
+        @media (min-width: 1200px) {
+          width: 209.2496px;
+          height: 149px;
         }
-        @media (min-width: 120rem) {
-          width: 18.9688rem;
-          height: 10.5rem;
+        @media (min-width: 1920px) {
+          width: 303.5008px;
+          height: 168px;
         }
       }
       > div.card:nth-of-type(2) {
-        @media (min-width: 56.25rem) {
-          width: 18.0938rem;
-          height: 8.25rem;
+        @media (min-width: 900px) {
+          width: 289.5008px;
+          height: 132px;
         }
-        @media (min-width: 75rem) {
-          width: 13.0781rem;
-          height: 9.3125rem;
+        @media (min-width: 1200px) {
+          width: 209.2496px;
+          height: 149px;
         }
-        @media (min-width: 120rem) {
-          width: 18.9688rem;
-          height: 10.5rem;
+        @media (min-width: 1920px) {
+          width: 303.5008px;
+          height: 168px;
         }
       }
       > div.card:nth-of-type(3) {
-        @media (min-width: 56.25rem) {
-          width: 37.5rem;
-          height: 7.1875rem;
+        @media (min-width: 900px) {
+          width: 600px;
+          height: 115px;
         }
-        @media (min-width: 75rem) {
-          width: 27.4688rem;
-          height: 8.25rem;
+        @media (min-width: 1200px) {
+          width: 439.5008px;
+          height: 132px;
         }
-        @media (min-width: 120rem) {
-          width: 39.25rem;
-          height: 9.125rem;
+        @media (min-width: 1920px) {
+          width: 628px;
+          height: 146px;
         }
       }
     }
-    @media (min-width: 56.25rem) {
-      gap: 1.3125rem;
+    @media (min-width: 900px) {
+      gap: 21px;
     }
   }
 }
 
 div.container.five {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
-    @media (min-width: 75rem) and (max-width: 95.9375rem) {
-      display: flex;
-      flex-direction: row;
-      padding: 0;
-      margin-bottom: 2.125rem;
+    @media (max-width: 1199px) {
+      gap: 34px;
     }
-    @media (min-width: 120rem) and (max-width: 156.25rem) {
+
+    @media (min-width: 1200px) and (max-width: 2565px) {
+      gap: 21px;
+      width: 100%;
+    }
+    @media (min-width: 1200px) and (max-width: 1535px) {
       display: flex;
       flex-direction: row;
       padding: 0;
-      margin-bottom: 2.125rem;
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1920px) and (max-width: 2500px) {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin-bottom: 34px;
     }
     > div.top {
-      @media (min-width: 23.4375rem) {
+      @media (min-width: 375px) {
         display: flex;
         flex-direction: column;
-        gap: 1.3125rem;
+        gap: 21px;
       }
-      @media (min-width: 75rem) and (max-width: 95.9375rem) {
-        width: 27.5rem;
-        height: 22.25rem;
+      @media (min-width: 1200px) and (max-width: 1535px) {
+        width: 440px;
+        height: 356px;
         margin-left: auto;
       }
-      @media (min-width: 120rem) {
-        width: 39.25rem;
-        height: 28.5rem;
+      @media (min-width: 1920px) {
+        width: 628px;
+        height: 456px;
         margin-right: auto;
         position: relative;
-        left: 11.875rem;
+        left: 190px;
       }
       > div.top {
         > p {
-          font-size: 1.0625rem;
+          font-size: 17px;
           color: #297da9;
           font-weight: 400;
           margin: 0;
           line-height: 100%;
           font-family: Poppins;
 
-          @media (min-width: 120rem) {
-            font-size: 1.3125rem;
+          @media (min-width: 1920px) {
+            font-size: 21px;
           }
         }
         > h2 {
-          font-size: 2.125rem;
+          font-size: 34px;
           color: black;
-          margin: 0rem;
+          margin: 0px;
 
-          @media (min-width: 120rem) {
-            font-size: 3.4375rem;
+          @media (min-width: 1920px) {
+            font-size: 55px;
           }
         }
       }
       > div.middle {
         > p:nth-of-type(1) {
-          font-size: 0.8125rem;
+          font-size: 13px;
           color: #425466;
           font-weight: 400;
           line-height: 100%;
           font-family: Poppins;
           margin: 0;
 
-          @media (min-width: 120rem) {
-            font-size: 1.0625rem;
+          @media (min-width: 1920px) {
+            font-size: 17px;
           }
         }
         > p:nth-of-type(2) {
-          font-size: 0.8125rem;
+          font-size: 13px;
           color: #425466;
           font-weight: 400;
           line-height: 100%;
           font-family: Poppins;
 
-          @media (min-width: 120rem) {
-            font-size: 1.0625rem;
+          @media (min-width: 1920px) {
+            font-size: 17px;
           }
         }
       }
@@ -716,102 +764,108 @@ div.container.five {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 7.9375rem;
-          height: 3.125rem;
-          gap: 0.3125rem;
+          width: 127px;
+          height: 50px;
+          gap: 5px;
           text-decoration: none;
           color: #ffffff;
-          font-size: 0.8125rem;
+          font-size: 13px;
           font-weight: 400;
           line-height: 100%;
-          padding: 1.1169rem 1.0231rem 1.0719rem 0.8125rem;
-          border-radius: 31.25rem;
+          padding: 17.8704px 16.3696px 17.1504px 13px;
+          border-radius: 500px;
           font-family: Poppins;
           background-color: #29aae3;
-          @media(min-width:120rem) {
-            width: 10.3125rem;
-            height: 4.125rem;
+          @media (min-width: 1920px) {
+            width: 165px;
+            height: 66px;
           }
 
           &:after {
             content: "";
             display: inline-block;
-            width: 1rem;
-            height: 1rem;
+            width: 16px;
+            height: 16px;
             background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
             background-size: cover;
             background-repeat: no-repeat;
           }
 
-          @media (min-width: 120rem) {
-            font-size: 1.0625rem;
+          @media (min-width: 1920px) {
+            font-size: 17px;
           }
         }
       }
     }
     > div.middle {
-      @media (min-width: 23.4375rem) and (max-width: 37.4375rem) {
+      @media (min-width: 375px) and (max-width: 599px) {
         display: flex;
         flex-direction: column;
-        gap: 1.3125rem;
+        gap: 21px;
       }
-      @media (min-width: 37.5rem) and (max-width: 56.1875rem) {
+      @media (min-width: 600px) and (max-width: 899px) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1.3125rem;
+        gap: 21px;
       }
-      @media (min-width: 56.25rem) and (max-width: 74.9375rem) {
+      @media (min-width: 900px) and (max-width: 1199px) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1.3125rem;
+        gap: 21px;
       }
-      @media (min-width: 75rem) and (max-width: 95.9375rem) {
+      @media (min-width: 1200px) and (max-width: 1535px) {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 1.3125rem;
+        gap: 21px;
       }
-      @media (min-width: 120rem) and (max-width: 156.25rem) {
+      @media (min-width: 1920px) and (max-width: 2500px) {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 1.3125rem;
+        gap: 21px;
       }
     }
   }
 }
 
 div.container.six {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
-    @media (min-width: 56.25rem) {
-      gap: 1.3125rem;
+    gap: 21px;
+    @media (min-width: 900px) {
+      gap: 21px;
     }
 
     > div.top {
       text-align: center;
 
       > p {
-        font-size: 1.0625rem;
+        font-size: 17px;
         color: #297da9;
         font-weight: 400;
         margin: 0;
         line-height: 100%;
         font-family: Poppins;
-
-        @media (min-width: 120rem) {
-          font-size: 1.3125rem;
-        }
       }
       > h2 {
-        font-size: 2.125rem;
+        font-size: 34px;
         color: black;
-        margin: 0.3125rem;
-
-        @media (min-width: 120rem) {
-          font-size: 3.4375rem;
-        }
+        margin: 5px;
       }
     }
     > div.bottom {
@@ -819,111 +873,63 @@ div.container.six {
       align-items: center;
       justify-content: center;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.3125rem;
-      max-width: 100%;
+      gap: 21px;
+      width: 100%;
 
-      @media (min-width: 56.25rem) and (max-width: 74.9375rem) {
+      @media (min-width: 900px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
 
-        > span.types:nth-of-type(1) {
-          width: 11.625rem;
-          height: 26.9344rem;
+        > div.types:nth-of-type(1) {
+          width: 186px;
+          height: 430.9504px;
         }
-        > span.types:nth-of-type(2) {
-          width: 11.625rem;
-          height: 26.9344rem;
+        > div.types:nth-of-type(2) {
+          width: 186px;
+          height: 430.9504px;
         }
-        > span.types:nth-of-type(3) {
-          width: 11.625rem;
-          height: 26.9344rem;
+        > div.types:nth-of-type(3) {
+          width: 186px;
+          height: 430.9504px;
         }
-        > span.types:nth-of-type(4) {
-          width: 18.0938rem;
-          height: 37.4006rem;
+        > div.types:nth-of-type(4) {
+          width: 289.5008px;
+          height: 598.4096px;
         }
-        > span.types:nth-of-type(5) {
-          width: 18.0938rem;
-          height: 37.4006rem;
+        > div.types:nth-of-type(5) {
+          width: 289.5008px;
+          height: 598.4096px;
         }
       }
 
-      @media (min-width: 75rem) {
+      @media (min-width: 1200px) {
         display: flex;
 
-        > span.types:nth-of-type(1) {
-          width: 10.1375rem;
-          height: 24.6288rem;
+        > div.types:nth-of-type(1) {
+          width: 162.2px;
+          height: 394.0608px;
         }
-        > span.types:nth-of-type(2) {
-          width: 10.1375rem;
-          height: 24.6288rem;
+        > div.types:nth-of-type(2) {
+          width: 162.2px;
+          height: 394.0608px;
         }
-        > span.types:nth-of-type(3) {
-          width: 10.1375rem;
-          height: 24.6288rem;
+        > div.types:nth-of-type(3) {
+          width: 162.2px;
+          height: 394.0608px;
         }
-        > span.types:nth-of-type(4) {
-          width: 10.1375rem;
-          height: 24.6288rem;
+        > div.types:nth-of-type(4) {
+          width: 162.2px;
+          height: 394.0608px;
         }
-        > span.types:nth-of-type(5) {
-          width: 10.1375rem;
-          height: 24.6288rem;
-        }
-      }
-
-      @media (min-width: 96rem) {
-        display: flex;
-
-        > span.types:nth-of-type(1) {
-          width: 13.95rem;
-          height: 30.6962rem;
-        }
-        > span.types:nth-of-type(2) {
-          width: 13.95rem;
-          height: 30.6962rem;
-        }
-        > span.types:nth-of-type(3) {
-          width: 13.95rem;
-          height: 30.6962rem;
-        }
-        > span.types:nth-of-type(4) {
-          width: 13.95rem;
-          height: 30.6962rem;
-        }
-        > span.types:nth-of-type(5) {
-          width: 13.95rem;
-          height: 30.6962rem;
+        > div.types:nth-of-type(5) {
+          width: 162.2px;
+          height: 394.0608px;
         }
       }
 
-      @media (min-width: 120rem) {
-        display: flex;
-
-        > span.types:nth-of-type(1) {
-          width: 18.15rem;
-          height: 39.6794rem;
-        }
-        > span.types:nth-of-type(2) {
-          width: 18.15rem;
-          height: 39.6794rem;
-        }
-        > span.types:nth-of-type(3) {
-          width: 18.15rem;
-          height: 39.6794rem;
-        }
-        > span.types:nth-of-type(4) {
-          width: 18.15rem;
-          height: 39.6794rem;
-        }
-        > span.types:nth-of-type(5) {
-          width: 18.15rem;
-          height: 39.6794rem;
-        }
-      }
-
-      > span.types {
+      > div.types {
         width: 100%;
         max-width: 100%;
 
@@ -935,7 +941,7 @@ div.container.six {
             width: 100%;
             max-width: 100%;
 
-            @media (min-width: 56.25rem) {
+            @media (min-width: 900px) {
               max-width: none;
             }
           }
@@ -944,29 +950,17 @@ div.container.six {
           text-align: center;
 
           > h2 {
-            font-size: 1.0625rem;
+            font-size: 17px;
             color: black;
             font-weight: 400;
-
-            @media (min-width: 120rem) {
-              font-size: 1.3125rem;
-            }
           }
           > p {
-            font-size: 0.8125rem;
+            font-size: 13px;
             color: #0000008c;
-
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
-            }
           }
           > a {
             text-decoration: none;
             color: #297da9;
-
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
-            }
           }
         }
       }
@@ -974,59 +968,80 @@ div.container.six {
   }
 }
 div.container.seven {
+  padding: 34px 24px;
+
+  @media (min-width: 600px) {
+    padding: 34px 93px;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    padding: 34px 150px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 2565px) {
+    padding: 34px 0 34px 0;
+  }
   > div.wrapper {
-    @media (min-width: 56.25rem) {
+    @media (max-width: 1199px) {
+      gap: 34px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 2565px) {
+      gap: 21px;
+      width: 100%;
+    }
+    @media (min-width: 900px) {
       flex-direction: row;
     }
 
     > div.top {
-      padding: 1.3125rem;
-      border-radius: 0.8125rem;
+      padding: 21px;
+      border-radius: 13px;
       background-color: #419ed1;
       width: 100%;
 
-      @media (min-width: 37.5rem) {
-        width: 25.875rem;
-        height: 17.875rem;
+      @media (min-width: 600px) {
+        width: 414px;
+        height: 286px;
       }
 
-      @media (min-width: 56.25rem) {
-        width: 18rem;
-        height: 17.875rem;
+      @media (min-width: 900px) {
+        width: 288px;
+        height: 286px;
       }
 
-      @media (min-width: 96rem) {
-        width: 24.125rem;
-        height: 24.125rem;
+      @media (min-width: 1536px) {
+        width: 386px;
+        height: 386px;
       }
 
-      @media (min-width: 120rem) {
-        width: 31.125rem;
-        height: 31.25rem;
-        padding: 3.4375rem;
+      @media (min-width: 1920px) {
+        width: 498px;
+        height: 500px;
+        padding: 55px;
       }
 
       > div.box {
         > div.top {
           > h2 {
-            font-size: 2.125rem;
+            font-size: 34px;
             font-weight: 400;
             color: white;
             line-height: 120%;
-            margin: 0 0 2.0625rem 0;
+            margin: 0 0 33px 0;
 
-            @media (min-width: 120rem) {
-              font-size: 3.4375rem;
+            @media (min-width: 1920px) {
+              font-size: 55px;
             }
           }
         }
         > div.middle {
-          margin-bottom: 2.0625rem;
+          margin-bottom: 33px;
           width: 100%;
           max-width: 100%;
 
-          @media (min-width: 120rem) {
-            margin: 4.8438rem 0 4.8438rem 0;
+          @media (min-width: 1920px) {
+            margin: 77.5008px 0 77.5008px 0;
           }
 
           > a {
@@ -1037,29 +1052,29 @@ div.container.seven {
             justify-content: center;
             position: relative;
             width: 100%;
-            height: 3.125rem;
+            height: 50px;
             max-width: 100%;
-            font-size: 0.8125rem;
+            font-size: 13px;
             font-weight: 400;
             font-family: "Inter";
             line-height: 1;
             letter-spacing: 0;
             color: #ffffff;
             background: none;
-            border: 0.0625rem solid #ffffff;
-            border-radius: 0.3125rem;
-            gap: 0.625rem;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            gap: 10px;
             cursor: pointer;
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
-              height: 4.125rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
+              height: 66px;
             }
 
             &::after {
               content: "";
-              width: 1rem;
-              height: 1rem;
+              width: 16px;
+              height: 16px;
               background-size: cover;
               background-repeat: no-repeat;
             }
@@ -1072,61 +1087,61 @@ div.container.seven {
         > div.bottom {
           > div.top {
             > strong {
-              font-size: 1.0625rem;
+              font-size: 17px;
               font-weight: 700;
               color: white;
 
-              @media (min-width: 120rem) {
-                font-size: 1.3125rem;
+              @media (min-width: 1920px) {
+                font-size: 21px;
               }
             }
             > p {
-              font-size: 0.8125rem;
+              font-size: 13px;
               font-weight: 400;
               color: white;
 
-              @media (min-width: 37.5rem) {
-                margin: 0 0 1.3125rem 0;
+              @media (min-width: 600px) {
+                margin: 0 0 21px 0;
               }
 
-              @media (min-width: 56.25rem) {
+              @media (min-width: 900px) {
                 margin: 0;
               }
 
-              @media (min-width: 120rem) {
-                font-size: 1.0625rem;
+              @media (min-width: 1920px) {
+                font-size: 17px;
               }
             }
           }
           > div.bottom {
-            @media (min-width: 56.25rem) {
-              margin-top: 1.3125rem;
+            @media (min-width: 900px) {
+              margin-top: 21px;
             }
 
             > strong {
-              font-size: 1.0625rem;
+              font-size: 17px;
               font-weight: 700;
               color: white;
 
-              @media (min-width: 120rem) {
-                font-size: 1.3125rem;
+              @media (min-width: 1920px) {
+                font-size: 21px;
               }
             }
             > p {
-              font-size: 0.8125rem;
+              font-size: 13px;
               font-weight: 400;
               color: white;
 
-              @media (min-width: 37.5rem) {
+              @media (min-width: 600px) {
                 margin: 0;
               }
 
-              @media (min-width: 56.25rem) {
+              @media (min-width: 900px) {
                 margin: 0;
               }
 
-              @media (min-width: 120rem) {
-                font-size: 1.0625rem;
+              @media (min-width: 1920px) {
+                font-size: 17px;
               }
             }
           }
@@ -1134,114 +1149,114 @@ div.container.seven {
       }
     }
     > div.bottom {
-      padding: 1.3125rem;
-      border-radius: 0.8125rem;
-      border: 0.0625rem solid #ccd6eb;
+      padding: 21px;
+      border-radius: 13px;
+      border: 1px solid #ccd6eb;
       background-color: #ffffff;
       max-width: 100%;
 
-      @media (min-width: 56.25rem) {
-        width: 18rem;
-        height: 17.875rem;
+      @media (min-width: 900px) {
+        width: 288px;
+        height: 286px;
       }
 
-      @media (min-width: 75rem) {
-        width: 37.0625rem;
+      @media (min-width: 1200px) {
+        width: 593px;
         position: relative;
         overflow: hidden;
 
         &::after {
           content: "";
           position: absolute;
-          top: 0rem;
-          right: 0rem;
+          top: 0px;
+          right: 0px;
           width: 100%;
           height: 100%;
           background-image: url("/assets/images/1200/nine-chat.png");
           background-repeat: no-repeat;
           background-position: right;
-          background-size: auto 19.25rem;
+          background-size: auto 308px;
         }
       }
 
-      @media (min-width: 96rem) {
-        width: 49.5625rem;
-        height: 24.125rem;
-        padding: 2.125rem;
+      @media (min-width: 1536px) {
+        width: 793px;
+        height: 386px;
+        padding: 34px;
 
         &::after {
           content: "";
           position: absolute;
-          top: 0rem;
-          right: 0rem;
+          top: 0px;
+          right: 0px;
           width: 100%;
           height: 100%;
           background-image: url("/assets/images/1200/nine-chat.png");
           background-repeat: no-repeat;
           background-position: right;
-          background-size: auto 24.0625rem;
+          background-size: auto 385px;
         }
       }
 
-      @media (min-width: 120rem) {
-        width: 63.375rem;
-        height: 31.25rem;
-        padding: 3.4375rem;
+      @media (min-width: 1920px) {
+        width: 1014px;
+        height: 500px;
+        padding: 55px;
 
         &::after {
           content: "";
           position: absolute;
-          top: 0rem;
-          right: 0rem;
+          top: 0px;
+          right: 0px;
           width: 100%;
           height: 100%;
           background-image: url("/assets/images/1200/nine-chat.png");
           background-repeat: no-repeat;
           background-position: right;
-          background-size: auto 31.375rem;
+          background-size: auto 502px;
         }
       }
 
       > div.box {
-        @media (min-width: 96rem) {
+        @media (min-width: 1536px) {
           display: flex;
           flex-direction: column;
-          gap: 2.1719rem;
+          gap: 34.7504px;
         }
 
         > div.top {
           > p:nth-of-type(1) {
-            font-size: 1.0625rem;
+            font-size: 17px;
             font-weight: 400;
             color: #297da9;
             line-height: 100%;
-            margin: 0 0 0.3125rem 0;
+            margin: 0 0 5px 0;
 
-            @media (min-width: 120rem) {
-              font-size: 1.3125rem;
+            @media (min-width: 1920px) {
+              font-size: 21px;
             }
           }
           > p:nth-of-type(2) {
-            font-size: 1.3125rem;
+            font-size: 21px;
             font-weight: 400;
             color: black;
             line-height: 100%;
-            margin: 0 0 1.0156rem 0;
+            margin: 0 0 16.2496px 0;
 
-            @media (min-width: 120rem) {
-              font-size: 2.125rem;
-              margin-bottom: 2.7656rem;
+            @media (min-width: 1920px) {
+              font-size: 34px;
+              margin-bottom: 44.2496px;
             }
           }
           > p:nth-of-type(3) {
-            font-size: 0.8125rem;
+            font-size: 13px;
             font-weight: 400;
             color: #090c058c;
             line-height: 100%;
-            margin: 0 0 1.0156rem 0;
+            margin: 0 0 16.2496px 0;
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
             }
           }
         }
@@ -1249,69 +1264,69 @@ div.container.seven {
           > button {
             display: flex;
             align-items: center;
-            gap: 0.625rem;
-            padding: 0.8125rem;
+            gap: 10px;
+            padding: 13px;
             background-color: #06c270;
             color: white;
-            border-radius: 0.3125rem;
+            border-radius: 5px;
             border: none;
             cursor: pointer;
 
-            @media (min-width: 56.25rem) {
-              margin-bottom: 0.75rem;
+            @media (min-width: 900px) {
+              margin-bottom: 12px;
             }
 
-            @media (min-width: 120rem) {
-              padding: 1.4063rem;
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              padding: 22.5008px;
+              font-size: 17px;
             }
           }
         }
         > div.bottom {
           > p:nth-of-type(1) {
-            font-size: 1.0625rem;
+            font-size: 17px;
             color: black;
             font-weight: 400;
 
-            @media (min-width: 56.25rem) {
+            @media (min-width: 900px) {
               margin: 0;
             }
 
-            @media (min-width: 120rem) {
-              font-size: 1.3125rem;
+            @media (min-width: 1920px) {
+              font-size: 21px;
             }
           }
           > p:nth-of-type(2) {
-            font-size: 0.8125rem;
+            font-size: 13px;
             color: #090c058c;
             font-weight: 400;
             line-height: 130%;
-            margin: 0.3125rem 0 1.0156rem 0;
+            margin: 5px 0 16.2496px 0;
 
-            @media (min-width: 56.25rem) {
-              margin: 0.3125rem 0 0.3125rem 0;
+            @media (min-width: 900px) {
+              margin: 5px 0 5px 0;
             }
 
-            @media (min-width: 56.25rem) {
-              width: 15.375rem;
+            @media (min-width: 900px) {
+              width: 246px;
             }
 
-            @media (min-width: 96rem) {
-              margin-bottom: 2.1719rem;
+            @media (min-width: 1536px) {
+              margin-bottom: 34.7504px;
             }
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
-              margin-bottom: 0.625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
+              margin-bottom: 10px;
             }
           }
           > a {
             text-decoration: none;
             color: #297da9;
-            font-size: 0.8125rem;
+            font-size: 13px;
 
-            @media (min-width: 120rem) {
-              font-size: 1.0625rem;
+            @media (min-width: 1920px) {
+              font-size: 17px;
             }
           }
         }
