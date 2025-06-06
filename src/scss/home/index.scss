@@ -1,7 +1,5 @@
 div.container {
-  // border: 1px solid red;
   > div.wrapper {
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -783,14 +781,8 @@ div.container.seven {
     padding: 34px 0 34px 0;
   }
   > div.wrapper {
-    @media (max-width: 1199px) {
-      gap: 34px;
-    }
-
-    @media (min-width: 1200px) and (max-width: 2565px) {
-      gap: 21px;
-      width: 100%;
-    }
+    gap: 21px;
+    justify-content: space-between;
     @media (min-width: 900px) {
       flex-direction: row;
     }
@@ -810,208 +802,207 @@ div.container.seven {
         width: 288px;
         height: 286px;
       }
-      t: 386px;
-    }
 
-    > div.box {
-      > div.top {
-        > h2 {
-          font-size: 34px;
-          font-weight: 400;
-          color: white;
-          line-height: 120%;
-          margin: 0 0 33px 0;
-        }
-      }
-      > div.middle {
-        margin-bottom: 33px;
-        width: 100%;
-        max-width: 100%;
-
-        > a {
-          display: inline-flex;
-          align-items: center;
-          text-align: center;
-          white-space: nowrap;
-          justify-content: center;
-          position: relative;
-          width: 100%;
-          height: 50px;
-          max-width: 100%;
-          font-size: 13px;
-          font-weight: 400;
-          font-family: "Inter";
-          line-height: 1;
-          letter-spacing: 0;
-          color: #ffffff;
-          background: none;
-          border: 1px solid #ffffff;
-          border-radius: 5px;
-          gap: 10px;
-          cursor: pointer;
-
-          &::after {
-            content: "";
-            width: 16px;
-            height: 16px;
-            background-size: cover;
-            background-repeat: no-repeat;
-          }
-
-          &::after {
-            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
-          }
-        }
-      }
-      > div.bottom {
+      > div.box {
         > div.top {
-          > strong {
-            font-size: 17px;
-            font-weight: 700;
-            color: white;
-          }
-          > p {
-            font-size: 13px;
+          > h2 {
+            font-size: 34px;
             font-weight: 400;
             color: white;
+            line-height: 120%;
+            margin: 0 0 33px 0;
+          }
+        }
+        > div.middle {
+          margin-bottom: 33px;
+          width: 100%;
+          max-width: 100%;
 
-            @media (min-width: 600px) {
-              margin: 0 0 21px 0;
+          > a {
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            white-space: nowrap;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            max-width: 100%;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Inter";
+            line-height: 1;
+            letter-spacing: 0;
+            color: #ffffff;
+            background: none;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            gap: 10px;
+            cursor: pointer;
+
+            &::after {
+              content: "";
+              width: 16px;
+              height: 16px;
+              background-size: cover;
+              background-repeat: no-repeat;
             }
 
-            @media (min-width: 900px) {
-              margin: 0;
+            &::after {
+              background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
             }
           }
         }
         > div.bottom {
-          @media (min-width: 900px) {
-            margin-top: 21px;
-          }
+          > div.top {
+            > strong {
+              font-size: 17px;
+              font-weight: 700;
+              color: white;
+            }
+            > p {
+              font-size: 13px;
+              font-weight: 400;
+              color: white;
 
-          > strong {
-            font-size: 17px;
-            font-weight: 700;
-            color: white;
+              @media (min-width: 600px) {
+                margin: 0 0 21px 0;
+              }
+
+              @media (min-width: 900px) {
+                margin: 0;
+              }
+            }
           }
-          > p {
+          > div.bottom {
+            @media (min-width: 900px) {
+              margin-top: 21px;
+            }
+
+            > strong {
+              font-size: 17px;
+              font-weight: 700;
+              color: white;
+            }
+            > p {
+              font-size: 13px;
+              font-weight: 400;
+              color: white;
+
+              @media (min-width: 600px) {
+                margin: 0;
+              }
+
+              @media (min-width: 900px) {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    > div.bottom {
+      padding: 21px;
+      border-radius: 13px;
+      border: 1px solid #ccd6eb;
+      background-color: #ffffff;
+      max-width: 100%;
+
+      @media (min-width: 900px) {
+        width: 288px;
+        height: 286px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 593px;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 100%;
+          height: 100%;
+          background-image: url("/assets/images/1200/nine-chat.png");
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: auto 308px;
+        }
+      }
+
+      > div.box {
+        > div.top {
+          > p:nth-of-type(1) {
+            font-size: 17px;
+            font-weight: 400;
+            color: #297da9;
+            line-height: 100%;
+            margin: 0 0 5px 0;
+          }
+          > p:nth-of-type(2) {
+            font-size: 21px;
+            font-weight: 400;
+            color: black;
+            line-height: 100%;
+            margin: 0 0 16.2496px 0;
+          }
+          > p:nth-of-type(3) {
             font-size: 13px;
             font-weight: 400;
+            color: #090c058c;
+            line-height: 100%;
+            margin: 0 0 16.2496px 0;
+          }
+        }
+        > div.middle {
+          > button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px;
+            background-color: #06c270;
             color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
 
-            @media (min-width: 600px) {
-              margin: 0;
+            @media (min-width: 900px) {
+              margin-bottom: 12px;
             }
+          }
+        }
+        > div.bottom {
+          > p:nth-of-type(1) {
+            font-size: 17px;
+            color: black;
+            font-weight: 400;
 
             @media (min-width: 900px) {
               margin: 0;
             }
           }
-        }
-      }
-    }
-  }
-  > div.bottom {
-    padding: 21px;
-    border-radius: 13px;
-    border: 1px solid #ccd6eb;
-    background-color: #ffffff;
-    max-width: 100%;
+          > p:nth-of-type(2) {
+            font-size: 13px;
+            color: #090c058c;
+            font-weight: 400;
+            line-height: 130%;
+            margin: 5px 0 16.2496px 0;
 
-    @media (min-width: 900px) {
-      width: 288px;
-      height: 286px;
-    }
+            @media (min-width: 900px) {
+              margin: 5px 0 5px 0;
+            }
 
-    @media (min-width: 1200px) {
-      width: 593px;
-      position: relative;
-      overflow: hidden;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 100%;
-        height: 100%;
-        background-image: url("/assets/images/1200/nine-chat.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: auto 308px;
-      }
-    }
-
-    > div.box {
-      > div.top {
-        > p:nth-of-type(1) {
-          font-size: 17px;
-          font-weight: 400;
-          color: #297da9;
-          line-height: 100%;
-          margin: 0 0 5px 0;
-        }
-        > p:nth-of-type(2) {
-          font-size: 21px;
-          font-weight: 400;
-          color: black;
-          line-height: 100%;
-          margin: 0 0 16.2496px 0;
-        }
-        > p:nth-of-type(3) {
-          font-size: 13px;
-          font-weight: 400;
-          color: #090c058c;
-          line-height: 100%;
-          margin: 0 0 16.2496px 0;
-        }
-      }
-      > div.middle {
-        > button {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 13px;
-          background-color: #06c270;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          cursor: pointer;
-
-          @media (min-width: 900px) {
-            margin-bottom: 12px;
+            @media (min-width: 900px) {
+              width: 246px;
+            }
           }
-        }
-      }
-      > div.bottom {
-        > p:nth-of-type(1) {
-          font-size: 17px;
-          color: black;
-          font-weight: 400;
-
-          @media (min-width: 900px) {
-            margin: 0;
+          > a {
+            text-decoration: none;
+            color: #297da9;
+            font-size: 13px;
           }
-        }
-        > p:nth-of-type(2) {
-          font-size: 13px;
-          color: #090c058c;
-          font-weight: 400;
-          line-height: 130%;
-          margin: 5px 0 16.2496px 0;
-
-          @media (min-width: 900px) {
-            margin: 5px 0 5px 0;
-          }
-
-          @media (min-width: 900px) {
-            width: 246px;
-          }
-        }
-        > a {
-          text-decoration: none;
-          color: #297da9;
-          font-size: 13px;
         }
       }
     }
