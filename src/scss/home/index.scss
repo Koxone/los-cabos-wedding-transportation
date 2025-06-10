@@ -693,7 +693,7 @@ div.container.six {
     > div.bottom {
       display: grid;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       grid-template-columns: repeat(2, 1fr);
       gap: 21px;
       width: 100%;
